@@ -1,0 +1,58 @@
+.container1{
+    margin: 30px;
+    padding: 3px;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(109, 105, 105);
+    border-radius: 20px;
+}
+
+input{
+    all:unset;
+    font-weight: bold;
+}
+
+fa-icon{
+    cursor: pointer;
+}
+
+label{
+    color:rgb(247, 25, 205);
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+img {
+    width: 80%;
+    padding: 10px;
+}
+
+.auto-card {
+    text-align: center;
+    margin: 20px;
+    width: fit-content;
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 15px;
+    box-shadow : 10px 5px 5px gray;
+    height : fit-content;
+    width : 20%;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    font-weight: bold;
+    color : white;
+    border: 1px solid rgb(66, 110, 168);
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: rgb(66, 110, 168);
+}
