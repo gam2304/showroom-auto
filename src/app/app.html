@@ -1,7 +1,20 @@
+<div class="background">
 <app-head-bar></app-head-bar>
 <app-search-bar [autos]="autoList" (onSelectCar)="selectCar($event)"></app-search-bar>
 
 @if (selectedCar){
-{{selectedCar.model}} <br>
-{{selectedCar.description}} <br>
+<div class="car-detail">
+  <img [src]="'images/' + selectedCar.photo" [alt]="selectedCar.brand + ' ' + selectedCar.model">
+  <div class="car-info">
+    <h2>{{selectedCar.brand}} {{selectedCar.model}}</h2>
+    <div class="car-specs">
+      <span>Power: {{selectedCar.power}} HP</span>
+      <span>Price: {{selectedCar.price}} 000 TND</span>
+      <span>Stock: {{selectedCar.availability}} units</span>
+    </div>
+    <p>{{selectedCar.description}}</p>
+  </div>
+</div>
 }
+
+</div>
